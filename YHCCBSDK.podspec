@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHCCBSDK"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "中国建设银行个人网银-建行SDK"
 
   s.description  = "中国建设银行个人网银-建行SDK，包含微信支付SDK、支付宝支付、建行手机支付"
