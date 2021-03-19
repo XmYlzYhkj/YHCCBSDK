@@ -8,11 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "WXApi.h"
 
 typedef void(^CompletionBlock)(NSDictionary *dic);
 
-@interface CCBNetPay : NSObject<WXApiDelegate>
+@interface CCBNetPay : NSObject
 
 /**
  *  创建支付单例服务
@@ -30,7 +29,6 @@ typedef void(^CompletionBlock)(NSDictionary *dic);
 
 /**
     龙支付接口 （合并支付）  能跳转APP则APP跳转支付，否则网页支付
-
  @param orderStr        订单信息 以 key1=value1&key2=value2 拼接
  @param completionBlock 支付结果回调
  */
@@ -81,19 +79,18 @@ typedef void(^CompletionBlock)(NSDictionary *dic);
  注册微信支付app接口
  需要在每次启动第三方应用程序时调用
  @param appid     微信开发者ID，需在微信支付平台注册app获得
+  @param universalLink     通用链接，为在微信支付平台配置的值
  @return 成功返回YES，失败返回NO
  */
-- (BOOL) registerWechatPayApp:(NSString *)appid;
+- (BOOL)registerWechatPayApp:(NSString *)appid universalLink:(NSString *)universalLink;
 
 /**
  支付宝支付接口
- 
  @param orderStr        订单信息 以 key1=value1&key2=value2 拼接
  @param completionBlock 支付结果回调
  */
 - (void)payAliOrder:(NSString *)orderStr
               callback:(CompletionBlock)completionBlock;
-
 
 
 /**
@@ -106,7 +103,6 @@ typedef void(^CompletionBlock)(NSDictionary *dic);
 
 /**
  界面选择支付接口
- 
  @param orderStr        订单信息 以 key1=value1&key2=value2 拼接
  @param completionBlock 支付结果回调
  */
@@ -115,7 +111,6 @@ typedef void(^CompletionBlock)(NSDictionary *dic);
 
 /**
  授权接口
- 
  @param info        授权用户相关信息 以 key1=value1&key2=value2 拼接
  @param completionBlock 授权结果回调
  */

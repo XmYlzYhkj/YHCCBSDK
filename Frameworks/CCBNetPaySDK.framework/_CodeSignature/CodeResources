@@ -6,31 +6,19 @@
 	<dict>
 		<key>Headers/CCBNetPay.h</key>
 		<data>
-		znCU/Fq8eDqvYswnu5krhWOxm9g=
+		9DPw/VYkdPpMeGs07Cl3ni8/Dtc=
 		</data>
 		<key>Headers/CCBNetPaySDK.h</key>
 		<data>
 		EX6LglWdINcIA7y5SoqKYRMzM6s=
 		</data>
-		<key>Headers/WXApi.h</key>
-		<data>
-		c+wn4AW+S9cLPG1sK9wLHQphlPQ=
-		</data>
-		<key>Headers/WXApiObject.h</key>
-		<data>
-		hqbBTmzihiI2vS6Rk29xiX8uWek=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		xIZqWued/JJvjn2TI8sOwExBrHU=
+		GZdsRQQGSZSxWnV0srP9qa2qXao=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		Bfz63eNS59DXN54fQQCnIT/FuJ4=
-		</data>
-		<key>README.txt</key>
-		<data>
-		V6GMJBtvrp3GpHWe8s5yZ2EZAOY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -39,11 +27,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			znCU/Fq8eDqvYswnu5krhWOxm9g=
+			9DPw/VYkdPpMeGs07Cl3ni8/Dtc=
 			</data>
 			<key>hash2</key>
 			<data>
-			p8bnaDvIk/S1hVgWJLef48u4BSCYcn5Grx0VDs3thuA=
+			83Gpt6uaZiZvMCXvv8KC9g/wQeg8/98L0BiCm/bVDZM=
 			</data>
 		</dict>
 		<key>Headers/CCBNetPaySDK.h</key>
@@ -57,28 +45,6 @@
 			gaaLz0xip376Nf5+s3r7BSYQZ4VDJYkJbLjLTTsNvDQ=
 			</data>
 		</dict>
-		<key>Headers/WXApi.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			c+wn4AW+S9cLPG1sK9wLHQphlPQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			FMHKUCf9ZPGh/GEdwurcn2S6XCmsZa649u/33/QBmgM=
-			</data>
-		</dict>
-		<key>Headers/WXApiObject.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hqbBTmzihiI2vS6Rk29xiX8uWek=
-			</data>
-			<key>hash2</key>
-			<data>
-			nM/BbBwq4ak5AM9uhBrCCVK6/q8C9eRAUnMcXcfyhqY=
-			</data>
-		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
@@ -90,21 +56,10 @@
 			GhRxPEQZQky4q++K038yKnW0DGBAz8MaIG6717wLZJs=
 			</data>
 		</dict>
-		<key>README.txt</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			V6GMJBtvrp3GpHWe8s5yZ2EZAOY=
-			</data>
-			<key>hash2</key>
-			<data>
-			RofaHc5lAN0mvtyDimAdgIGdlDM7Hc0famlEXR5jPVM=
-			</data>
-		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -135,24 +90,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -188,13 +131,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>

@@ -2,10 +2,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHCCBSDK"
-  s.version      = "1.1.0"
-  s.summary      = "中国建设银行个人网银-建行SDK"
+  s.version      = "2.0.0"
+  s.summary      = "中国建设银行个人网银-建行SDK；2.0.0； "
 
-  s.description  = "中国建设银行个人网银-建行SDK，包含微信支付SDK、支付宝支付、建行手机支付"
+  s.description  = "中国建设银行个人网银-建行SDK，包含微信支付SDK、支付宝支付、建行手机支付；
+2021-3-19:加入CCBNetPaySDK、CCBGovPaySDK、CCBSharedPurseSDK；支持SXRS的ZR-灵活就业缴费"
 
   s.homepage     = "https://github.com/XmYlzYhkj/YHCCBSDK"
 
@@ -24,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.libraries        = 'z', 'c++', 'sqlite3'
 
-  s.vendored_frameworks = ["Frameworks/CCBNetPaySDK.framework"]
+  s.vendored_frameworks = ["Frameworks/*.framework"]
   
   s.resources    = 'Resources/CCBSDK.bundle'
 
