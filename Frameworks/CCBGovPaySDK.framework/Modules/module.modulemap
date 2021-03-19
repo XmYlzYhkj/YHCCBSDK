@@ -1,0 +1,6 @@
+framework module CCBGovPaySDK {
+  umbrella header "CCBGovPaySDK.h"
+
+  export *
+  module * { export * }
+}
